@@ -10,6 +10,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('jobs/',include('job.job_url',namespace='jobs')),
     path('contact/',include('contact.contact_url',namespace='contact')),
+    path('api-auth/', include('rest_framework.urls')),
+
     
             ]
 
